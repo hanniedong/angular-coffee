@@ -1,0 +1,18 @@
+.cropped-image {
+  width: 100%; /* Set image width to 100% of its container */
+  height: 300px; /* Set a fixed height for the image */
+  object-fit: cover; /* Crop the image to cover the container */
+}
+
+.product-list-title {
+  color: #006241; /* Green color for the title */
+}
+
+.product-list-button {
+  background-color: #006241; /* Green background color for buttons */
+  color: #fff; /* White text color for buttons */
+}
+
+.product-list-button:hover {
+  background-color: #004a34; /* Darker green color on hover */
+}
