@@ -1,13 +1,16 @@
 <div class="container">
   <div class="header">
-    <button (click)="goBack()" class="btn btn-secondary">Back</button>
+    <button (click)="goBack()" class="btn btn-secondary back-button">Back</button>
+    <div class="cart-icon">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="cart-count">{{ cartCount }}</span>
+    </div>
+  </div>
+  <div class="product-detail">
     <h2>{{ product.name }}</h2>
-  </div>
-  <div class="product-info">
-    <img [src]="product.imageUrl" alt="{{ product.name }}" class="product-image">
-    <h3>Description:</h3>
+    <img [src]="product.imageUrl" alt="{{ product.name }}">
     <p>{{ product.description }}</p>
-    <h3>Price: ${{ product.price }}</h3>
-    <button (click)="addToCart()" class="btn btn-primary">Add to Cart</button>
-  </div>
+    <p>Price: ${{ product.price }}</p>
+    <button (click)="addToCart()">Add to Cart</button>
+</div>
 </div>
